@@ -2,17 +2,12 @@ package main
 
 import (
 	"crypto/md5"
-	"flag"
 	"fmt"
 	"io"
 	"io/ioutil"
 	"strings"
 	"unicode"
-
-	"github.com/pkg/profile"
 )
-
-var cpuprofile = flag.String("cpuprofile", "", "write cpu profile to file")
 
 var anagramString = "poultry outwits ants"
 var anagram = createAnagramSet("poultry outwits ants")
@@ -159,10 +154,6 @@ func checkThreeWordAnagrams(words []string) {
 }
 
 func main() {
-
-	defer profile.Start().Stop()
-
-	//defer profile.Start(profile.MemProfile).Stop()
 
 	words, err := ioutil.ReadFile("wordlist")
 	if err != nil {
