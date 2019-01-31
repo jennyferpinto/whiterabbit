@@ -173,9 +173,6 @@ func main() {
 
 	validWords := generateValidWords(list)
 
-	fmt.Printf("num valid words %d", len(validWords))
-	fmt.Println()
-
 	fmt.Println("Now checking valid words for 3 word anagrams...")
 
 	checkThreeWordAnagrams(validWords)
