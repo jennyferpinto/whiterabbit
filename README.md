@@ -1,13 +1,14 @@
+**Description**
 Search algorithm in Go for finding the passwords, from a given list of words, that match two MD5 hashes
 
-*Information provided*
-
+**Information provided**
 - An anagram of the password: "poultry outwits ants" 
 - MD5 Hashes of the secret passwords:
 
-	- `hash1 := "e4820b45d2277f3844eac66c903e84be"`
-	- `hash2 := "23170acc097c24edb98fc5488ab033fe"`
+- `hash1 := "e4820b45d2277f3844eac66c903e84be"`
+- `hash2 := "23170acc097c24edb98fc5488ab033fe"`
 
+**Solution:**
 
 *Step 1:*  
 - Parse the alphabetically organized word file to create an array of 915,135 words
